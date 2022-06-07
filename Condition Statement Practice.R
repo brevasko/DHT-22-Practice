@@ -1,3 +1,4 @@
+# Class exercise for June 7th, 2022
 # Conditions
 
 userage <- 15
