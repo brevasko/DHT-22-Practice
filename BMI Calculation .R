@@ -1,8 +1,8 @@
 #BMI Calculations
 
 #Get user input
-Height <- readline("Please enter your Height")
-Weight <- readline("Please enter your Weight")
+Height <- readline("Please enter your Height in Metres")
+Weight <- readline("Please enter your Weight in Kg")
 
 #Convert use input to numeric
 Height <- as.numeric(Height)
@@ -23,15 +23,18 @@ if (is.na(Weight)) {
 
 # BMI Description 
 if (BMI < 18.5) {
-  print("you're underweight")
+  print(paste0("you're underweight. BMI = ", BMI))
 } else if (BMI <= 24.9) {
-  print("healthy weight")
+  print(paste0("healthy weight. BMI = ", BMI))
 } else if (BMI <= 29.9) {
-  print("you're overweight")
+  print(paste0("you're overweight. BMI = ", BMI))
 } else if (BMI <= 39.9) {
-  print("you're obese")
+  print(paste0("you're obese. BMI = ", BMI))
+  } else {
+    print(paste0("Your BMI has not been categorized. BMI = ", BMI))
+  }
 }
-}
+
 
 
 
